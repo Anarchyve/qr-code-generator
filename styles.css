@@ -1,0 +1,88 @@
+/* 포트폴리오 웹에 사용된 색상 */
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+    --primary-color: #f4f4f4;  /* 포트폴리오의 헤더 색상 */
+    --secondary-color: #f9f9f9; /* 프로젝트 리스트 배경 색상 */
+    --hover-color: #333;        /* 다크 모드 시 색상 */
+    --border-radius: 10px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.qr-container {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid var(--hover-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: var(--hover-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darken(var(--hover-color), 10%);
+}
+
+#qr-result {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#qr-code {
+    display: none;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+#size-controller {
+    margin-top: 20px;
+    display: none;
+}
+
+#size-slider {
+    width: 80%;
+    max-width: 400px;
+}

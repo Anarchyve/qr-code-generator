@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>QR Code Generator</h1>
+    </header>
+
+    <section id="generate" class="scroll-section">
+        <div class="qr-container">
+            <input type="text" id="url-input" placeholder="Enter the URL" />
+            <button id="generate-btn">Generate</button>
+            <div id="qr-result">
+                <img id="qr-code" src="" alt="Your QR code will appear here." />
+            </div>
+            <div id="size-controller">
+                <label for="size-slider">Adjust QR Code Size: </label>
+                <input type="range" id="size-slider" min="100" max="500" value="200" />
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
